@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<body>
+<html lang="en">
+    <body>
 <style>
 .searchbar {
     display: block;
     border-radius: 20px;
     border-width: 1px;
     transform: scale(3);
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 20em;
     position: relative;
     top: 70px;
 }
-.navbar{
-    display: block;
-    color:rgb(0, 0, 0);
+.topnav{
 }
-
+.navbar:hover {
+    color:rgb(0, 0, 0);
+    text-decoration: underline;
+}
 #logo {
     display: block;
     transform: scale(1.5);
     margin: auto;
     margin-top: 24%;
 }
-
 </style>
-<h1>
-    <a class:="navbar" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-    <a class="navbar" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-</h1>
-    
+
+    <div class="topnav">
+        <a:hover href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="navbar">About</a:hover>
+        <a:hover href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a:hover>
+        <a:hover href="https://mail.google.com/mail/&ogbl">Gmail</a:hover>
+        <a:hover href="https://www.google.com/imghp?hl=en&ogbl">Images</a:hover>
+    </div>
 <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 <form>
         <input class="searchbar" type="text">
 </form>
+</body>
+</html>
 
 
 
