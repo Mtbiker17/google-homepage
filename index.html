@@ -3,8 +3,9 @@
 <body>
     <title>Devin's Google Homepage</title>
 <style>
-.searchbar {
+#searchbar {
     display: block;
+    border: 0.6px solid #dbdbdb;
     border-radius: 20px;
     border-width: 0.1mm;
     transform: scale(3);
@@ -12,7 +13,7 @@
     margin-right: auto;
     width: 20em;
     position: relative;
-    top: 70px;
+    top: 50px;
     max-width: 50mm;
 }
 #about{
@@ -48,11 +49,12 @@
 }
 #userlogo{
     float: right;
+    position: relative;
     background-color: blue;
     border-radius: 50px;
     width: 30px;
     height: 30px;
-    margin-right: 18px;
+    margin-right: 200px;
     text-align: center;
     color: white;
     text-decoration: double;
@@ -67,12 +69,58 @@
 }
 #mic{
     transform: scale(.2);
+    margin-left: 800px;
+    position: absolute; visibility: visible; left: 5px; top: 340px;
 }
  #logo{
     display: block;
     transform: scale(1);
     margin: auto;
-    margin-top: 210px;
+    margin-top: 200px;
+}
+.sbuttons{
+    position: relative;
+    padding-top: 100px;
+    z-index: 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: black;
+    width: 300px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+#doodles{
+    margin-right: 50px;
+    padding: 9px;
+}
+#googlesearch{
+    padding: 10px;
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxleft{
+    padding: 15px;
+    margin-left: 10px;
+}
+.boxright{
+    padding: 15px;
+    margin-left: 1200px;
+}
+.footertext{
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    color: #5f6368;
+    padding: 15px;
+    font-size: 14px;
 }
 </style>
 
@@ -89,13 +137,28 @@
 
 <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 <form>
-    <div>
-        <input class="searchbar" type="text">
-            <div>
-                <img id="mag" src="mag.png">
-                <img id="mic" src="mic.png">
-            </div>        
-    </div>
+<input id="searchbar" type="text">
 </form>
+
+<div class="sbuttons">
+        <form action="https://www.google.com/">
+            <input id="doodles" value="Google Search" type="submit">
+        <form action="https://www.google.com/doodles">
+            <input id="googlesearch" value="I'm Feeling Lucky" type="submit"></form> 
+</div>
+
+<div class="footer">
+    <div class="boxleft">
+        <a class="footertext" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        <a class="footertext" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        <a class="footertext" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+    </div>
+    <div class="boxright">
+        <a class="footertext" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+        <a class="footertext" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+        <a class="footertext" href="https://www.espn.com">Settings</a>
+    </div>
+</div>
+
 </body>
 </html>
