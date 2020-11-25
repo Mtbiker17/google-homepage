@@ -1,4 +1,4 @@
-This project was my very firsyt HTML project.
+This project was my very first HTML project.
 
 The objective was to try to recreate the Google homepage.
 
